@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/formulario.css">
+	</head>
+	<body>
+	<form id="formu" action="http://www.w3schools.com/action_page.php">
+	<section>
+		<h2>Obligado al pago</h2>
+		<p class="plinea">
+			<label for="nifId">
+				<span>N.I.F.</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<input id="nifId" type="text" name="nif" maxlength="9" pattern="\d{8,8}[A-Za-z]" required>
+			</label>
+		</p>
+	    </br>
+		<p class="plinea">
+			<label for="nombreId">
+				<span>Apellidos y Nombre o Razón Social:</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<input id="nombreId" type="text" name="nombre" maxlength="30" required>
+			</label>
+		</p>
+		</br>
+		<p>
+			<label for="siglasId">
+				<span>Siglas</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<select id="siglasId" name="siglas" required>
+					<option value="" selected disabled>Seleccione sigla</option>
+					<option value="calle">Calle</option>
+					<option value="avenida">Avenida</option>
+					<option value="mercedes">Plaza</option>
+				</select>
+			</label>
+		</p>
+		<p>
+			<label for="nombreviaId">
+				<span>Nombre vía pública</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<input id="nombreviaId" type="text" name="nombrevia" maxlength="30" required>
+			</label>
+		</p>
+		<p>
+			<label for="numeroviaId">
+				<span>Número</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<input id="numeroviaId" type="number" name="numerovia" maxlength="3" required>
+			</label>
+		</p>
+		<p>
+			<label for="escaleraviaId">
+				<span>Escalera</span>
+				<input id="escaleraviaId" type="text" name="escaleravia" maxlength="3">
+			</label>
+		</p>
+		<p>
+			<label for="pisoviaId">
+				<span>Piso</span>
+				<input id="pisoviaId" type="number" name="pisovia" maxlength="3">
+			</label>
+		</p>
+		<p id="ppuerta">
+			<label for="puertaviaId">
+				<span>Puerta</span>
+				<input id="puertaviaId" type="text" name="puertavia" maxlength="9">
+			</label>
+		</p>
+		</br>
+		<p class="plinea">
+			<label for="telefonoId">
+				<span>Teléfono</span>
+				<input id="telefonoId" type="number" name="telefono" maxlength="9">
+			</label>
+		</p>
+		<p>
+			<label for="faxId">
+				<span>Fax</span>
+				<input id="faxId" type="number" name="fax" maxlength="9">
+			</label>
+		</p>
+		</br>
+		<p class="plinea">
+			<label for="provinciaId">
+				<span>Provincia</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<select id="provinciaId" name="provincia" required>
+					<option value="" selected disabled>Seleccione provincia</option>
+						 <option value='alava'>Álava</option>
+						 <option value='albacete'>Albacete</option>
+						 <option value='alicante'>Alicante/Alacant</option>
+						 <option value='almeria'>Almería</option>
+						 <option value='asturias'>Asturias</option>
+						 <option value='avila'>Ávila</option>
+						 <option value='badajoz'>Badajoz</option>
+						 <option value='barcelona'>Barcelona</option>
+						 <option value='burgos'>Burgos</option>
+						 <option value='caceres'>Cáceres</option>
+						 <option value='cadiz'>Cádiz</option>
+						 <option value='cantabria'>Cantabria</option>
+						 <option value='castellon'>Castellón/Castelló</option>
+						 <option value='ceuta'>Ceuta</option>
+						 <option value='ciudadreal'>Ciudad Real</option>
+						 <option value='cordoba'>Córdoba</option>
+						 <option value='cuenca'>Cuenca</option>
+						 <option value='girona'>Girona</option>
+						 <option value='laspalmas'>Las Palmas</option>
+						 <option value='granada'>Granada</option>
+						 <option value='guadalajara'>Guadalajara</option>
+						 <option value='guipuzcoa'>Guipúzcoa</option>
+						 <option value='huelva'>Huelva</option>
+						 <option value='huesca'>Huesca</option>
+						 <option value='illesbalears'>Illes Balears</option>
+						 <option value='jaen'>Jaén</option>
+						 <option value='acoruña'>A Coruña</option>
+						 <option value='larioja'>La Rioja</option>
+						 <option value='leon'>León</option>
+						 <option value='lleida'>Lleida</option>
+						 <option value='lugo'>Lugo</option>
+						 <option value='madrid'>Madrid</option>
+						 <option value='malaga'>Málaga</option>
+						 <option value='melilla'>Melilla</option>
+						 <option value='murcia'>Murcia</option>
+						 <option value='navarra'>Navarra</option>
+						 <option value='ourense'>Ourense</option>
+						 <option value='palencia'>Palencia</option>
+						 <option value='pontevedra'>Pontevedra</option>
+						 <option value='salamanca'>Salamanca</option>
+						 <option value='segovia'>Segovia</option>
+						 <option value='sevilla'>Sevilla</option>
+						 <option value='soria'>Soria</option>
+						 <option value='tarragona'>Tarragona</option>
+						 <option value='santacruztenerife'>Santa Cruz de Tenerife</option>
+						 <option value='teruel'>Teruel</option>
+						 <option value='toledo'>Toledo</option>
+						 <option value='valencia'>Valencia/Valéncia</option>
+						 <option value='valladolid'>Valladolid</option>
+						 <option value='vizcaya'>Vizcaya</option>
+						 <option value='zamora'>Zamora</option>
+						 <option value='zaragoza'>Zaragoza</option>
+				</select>
+			</label>
+		</p>
+		<p>
+			<label for="municipioId">
+				<span>Municipio</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<select id="municipioId" name="municipio" required>
+					<option value="" selected disabled>Seleccione municipio</option>
+					<option value="adeje">Adeje</option>
+					<option value="buenavista">Buenavista del Norte</option>
+					<option value="orotava">La Orotava</option>
+					<option value="santacruzt">Santa Cruz de Tenerife</option>
+					<option value="vilaflor">Vilaflor</option>
+				</select>
+			</label>
+		</p>
+		<p>
+			<label for="postalId">
+				<span>Cód. Postal</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<input id="postalId" type="text" name="postal" maxlength="5" pattern="\d{5}" required>
+			</label>
+		</p>
+	</section>
+	<hr>
+	<section>
+		<h2>Tasas</h2>
+		<p>
+			<label for="tramiteId">
+				<span>Trámite</span>
+				<strong><abbr tittle="obligatorio">(*)</abbr></strong>
+				<select id="tramiteId" name="tramite" required>
+					<option value="" selected disabled>Seleccione trámite</option>
+					<option value="pago">Pago</option>
+					<option value="consulta">Consulta</option>
+					<option value="queja">Queja</option>
+				</select>
+			</label>
+		</p>
+		<p class="plinea">
+			<label for="expedienteId">
+				<span>Número de Expediente</span>
+				<input id="expedienteId" type="number" name="expediente" maxlength="10">
+			</label>
+		</p>
+		<p>
+			<label for="liquidacionId">
+				<span>Número de Liquidación</span>
+				<input id="liquidacionId" type="number" name="liquidacion" maxlength="10">
+			</label>
+		</p>
+		</br>
+	  <p class="plinea">
+		  <label for="fpago1">
+			<input type="radio" id="fpago1" name="fpago" checked="checked">
+			<strong><span>En efectivo</span></strong>
+		  </label>
+	  </p>
+	  <p>
+		  <label for="fpago2">
+			<input type="radio" id="fpago2" name="fpago">
+			<strong><span>Adeudo en cta.</span></strong>
+		  </label>
+	  </p>
+	  <p>
+		  <label for="fpago3">
+			<input type="radio" id="fpago3" name="fpago">
+			<strong><span>Pago telemático</span></strong>
+		  </label>
+	  </p>
+	  </br>
+		<p class="plinea" id="pconcepto">
+			<label for="textoId">
+				<span>Concepto</span>
+				<textarea id="textoId" rows="4" cols="50" name="texto"></textarea>
+			</label>
+		</p>
+	  
+	</section>
+	<input type="submit" value="Continuar">
+	<input type="button" value="Volver">
+	<input type="reset" value="Limpiar formulario">
+   </form>
+  </body>
+</html>
